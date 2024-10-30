@@ -1,0 +1,63 @@
+.marriage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0.5)),
+      url("./filipp-romanovski-Sl41yRnG7PY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-clip: border-box;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  .makeit {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  header {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  /* Adjust opacity for mobile menu */
+  #mobile-menu {
+    background-color: rgba(
+      31,
+      41,
+      55,
+      0.9
+    ); /* dark background with slight transparency */
+  }
+  
+  /* Other styles... */
+  section {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  footer {
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .carousel {
+    position: relative;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+.carousel-images img {
+    margin-right: 10px; /* Adds spacing between images */
+}

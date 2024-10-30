@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penguin Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "custom-beige": "#f5f5dc",
+              "custom-dark-beige": "#e6e6c9",
+              "renovar-orange": "#FFA500", 
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+ 
+    <header
+      class="flex items-center justify-between px-6 py-4 bg-[#330000] sticky top-0 z-10 "
+    >
+      
+      <div class="flex items-center">
+        <a href="index.html">  <img
+          src="images/logo.jpg"
+          alt="Logo"
+          class="w-[75px] h-[75px] mr-4 ml-4 rounded-full"
+        /></a>
+        <span class="text-[#D09683] text-2xl font-semibold hidden md:inline"
+          >PENGUIN SALES & SERVICES </span
+        >
+      </div>
+
+     
+      <nav
+        class="hidden md:flex flex-1 justify-center space-x-[100px] mr-[200px] text-2xl "
+      >
+        <a href="index.html" class="text-[#D09683] hover:text-[#73605B]">Home</a>
+
+        <a href="./services.html" class="text-[#D09683] hover:text-[#73605B]"
+          >Services</a
+        >
+        <a href="./sales.html" class="text-[#D09683] hover:text-[#73605B]"
+        >Sales</a
+      >
+        <a href="./contact.html" class="text-[#D09683] hover:text-[#73605B]"
+          >Contacts</a
+        >
+      </nav>
+
+      
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="focus:outline-none">
+          <div class="space-y-1">
+            <div class="w-6 h-0.5 bg-white"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+            <div class="w-6 h-0.5 bg-white"></div>
+          </div>
+        </button>
+      </div>
+    </header>
+
+  
+    <div
+      id="mobile-menu"
+      class="md:hidden flex-col items-center hidden bg-gray-800 text-center text-white my-8 py-4 opacity-90 fixed top-16 w-full z-20 transition-opacity duration-300 ease-in-out"
+    >
+      <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+      <a href="services.html" class="block px-4 py-2 hover:bg-gray-700">Services</a>
+      <a href="sales.html" class="block px-4 py-2 hover:bg-gray-700">Sales</a>
+      <a href="contact.html" class="block px-4 py-2 hover:bg-gray-700"
+        >Contact Us</a
+      >
+    </div>
+
+
+
+    <section id="home" class="text-center py-16 bg-custom-beige">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Penguin Sales and Services</h1>
+      <p class="text-lg mb-2">Your one-stop solution for bridal car services, heavy equipment rental, construction, and more!</p>
+
+  </section>
+ 
+  <section id="services" class="py-16 bg-[#FAEBD7]">
+    <h2 class="text-3xl font-bold text-center mb-8">Services We Offer</h2>
+
+    <div class="container mx-auto px-4">
+    
+        <div class="service-item mb-12 text-center bg-[#330000] rounded-lg shadow-md overflow-hidden">
+          <h3 class="text-3xl font-semibold mb-4 text-[#D09683] py-12">Bridal Car Services</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/133675694_679518506092349_5442059269456262494_n.webp" alt="Bridal Car 1" class="w-full h-[400px] object-cover">
+              </div>
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/_Weddingcardecoration-recirc_DavyWhitener-291af3a822104bd98dc1f6bfd851d9eb.jpg" alt="Bridal Car 2" class="w-full h-[400px] object-cover">
+              </div>
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/istockphoto-528212559-612x612.jpg" alt="Bridal Car 3" class="w-full h-[400px] object-cover">
+              </div>
+          </div>
+          <p class="mt-4 text-[#D09683] text-lg px-6">Make your special day unforgettable with our luxurious bridal car services.</p>
+          <p class="mt-4 text-[#D09683] text-lg px-6 mb-2">Package includes:<br>
+            – Bouquet of flowers <br>
+            – VIP blinkers<br>
+            – Driver in semi formal attire<br>
+            – From hotel to ceremony<br>
+            – From ceremony to reception<br>
+            – First 3 hours rate<br>
+            – Additional fee is applicable in excess of 3 hours<br>
+            – Price starts at PhP 4,000.00 for our BMW E39<br>Please contact for booking assistance (0923) 086 8342<br><br>
+            Price is subject to change without prior notice.</p>
+      </div>
+      
+     
+      <div class="service-item mb-12 text-center bg-[#330000]  rounded-lg shadow-md overflow-hidden"> 
+          <h3 class="text-3xl font-semibold mb-4 text-[#D09683] py-12">Towing Services (24/7)</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/toww.jpg" alt="Towing Service 1" class="w-full h-[400px] object-cover">
+              </div>
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/tow.jpg" alt="Towing Service 2" class="w-full h-[400px] object-cover">
+              </div>
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/ms-uppy-MOK9wrWYGgg-unsplash.jpg" alt="Towing Service 3" class="w-full h-[400px] object-cover">
+              </div>
+          </div>
+          <p class="mt-4 text-[#D09683] text-lg px-6">We are proud to inform you that we can handle any type of towing requirements, no matter how complex or complicated.</p>
+          <p class="text-[#D09683] text-lg px-6 mb-8">Provide the following details: <br> 
+            Pick up point: <br>
+            Drop off point: <br>
+            Vehicle type: <br><br>
+            We are committed to provide fast, affordable, reliable towing and recovery services. We offer our services 24 hours a day, seven days a week. Whether it’s an old rusted antique that you wanted to turn into a project car or roadside emergency assistance, Penguin Towing can assist you. We do everything we can to work with your schedule. Get your free quote today.
+            <br><br>
+            <p class="text-[#D09683] text-lg font-bold mb-2"> Emergency Hotline: (0923) 086 8342</p>
+
+          </p>
+      </div>
+
+    
+      <div class="service-item mb-12 text-center bg-[#330000]  rounded-lg shadow-md overflow-hidden">
+          <h3 class="text-3xl font-semibold mb-4 text-[#D09683] py-12">Trucking Services</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/truck (1).jpg" alt="Trucking Service 1" class="w-full h-[400px] object-cover">
+              </div>
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/truck2.jpg" alt="Trucking Service 2" class="w-full h-[400px] object-cover">
+              </div>
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/truck3.jpg" alt="Trucking Service 3" class="w-full h-[400px] object-cover">
+              </div>
+          </div>
+          <p class="mt-4 text-[#D09683] text-lg px-6">  Our Full Truckload service is ideal for businesses with large shipments.
+             We provide dedicated trucks for your cargo, ensuring faster transit times and better pricing.</p>
+          <p class="mt-4 text-[#D09683] text-lg px-6 mb-8">
+            – Dedicated trucks for large shipments  <br>
+            – Reduced transit times <br>
+            – Cost-effective for bulk transportation <br>
+            – Cost-effective for smaller shipments<br>
+            – Consolidated loads for efficiency<br>
+            – Reliable delivery schedules<br>
+            <p class="text-[#D09683] text-lg font-bold mb-2">  Contact us for proper quotation at (0923) 086 8342</p>
+          </p>
+        </div>
+
+    
+
+  
+      <div class="service-item mb-12 text-center bg-[#330000]  rounded-lg shadow-md overflow-hidden">
+          <h3 class="text-3xl font-semibold mb-4 text-[#D09683] py-12"  >General Construction & Maintenance</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/cons.jpg" alt="Construction Service 1" class="w-full h-[400px] object-cover">
+              </div>
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/cons2.jpg" alt="Construction Service 2" class="w-full h-[400px] object-cover">
+              </div>
+              <div class="relative overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105">
+                  <img src="./images/cons3.jpg" alt="Construction Service 3" class="w-full h-[400px] object-cover">
+              </div> 
+          </div>
+          <p class="mt-4 text-[#D09683] text-lg px-6"> Our commercial construction services cover a wide range of projects, including office buildings, retail spaces, and industrial facilities. We ensure projects are completed on time and within budget, meeting all regulatory requirements.</p>
+          <p class="mt-4 text-[#D09683] text-lg px-6 mb-2">
+            – Land clearing and grading <br>
+            – Excavation and drainage solutions <br>
+            – Utility installation and site prep <br>
+            – Office space construction and renovation <br>
+            – Retail build-outs and expansions <br>
+            – Industrial facility construction <br>
+            
+        </div>
+
+
+    </div>
+    <div class="flex justify-center mb-4">
+      <img src="./images/tools-svgrepo-com.svg" alt="Technology Icon" class="w-16 h-16"> 
+    </div>  <h2 class="text-3xl font-bold text-center mb-8">We also offer diverse range of needs</h2> <div class="flex justify-center">
+    <a href="sales.html"><button type="submit" class="mb-12 text-white px-4 py-2 text-white bg-[#FFA500] rounded-full transition-all duration-300 ease-in-out hover:bg-[#FF8C00] animate-pulse">Sales</button>
+ </a> </div>
+
+      <div class="flex justify-center mb-4"> 
+     <img src="./images/customer-service-headphones-svgrepo-com.svg" alt="Technology Icon" class="w-16 h-16"> 
+   </div>  <h2 class="text-3xl font-bold text-center mb-8">Interested? Connect with us</h2> <div class="flex justify-center">
+   <a href="contact.html"><button type="submit" class="bg-renovar-orange text-white px-4 py-2 text-white bg-[#FFA500] rounded-full transition-all duration-300 ease-in-out hover:bg-[#FF8C00] animate-pulse">Contact Us</button>
+</a> </div>
+</section>
+
+
+
+
+
+<footer class="bg-[#73605B] text-[#330000] py-8">
+  <div class="container mx-auto px-4">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+    
+      <div>
+        <h3 class="font-bold  mb-4">ADDRESS</h3>
+        <address class="not-italic">
+          <p class=" text-[#330000]">Penguin Street</p>
+          <p class=" text-[#330000]">Bacolod City, Negros Occidental</p>
+        </address>
+      </div>
+
+    
+      <div>
+        <h3 class="font-bold  mb-4">PHONE</h3>
+        <a href="tel:(0923) 086 8342" class=" text-[#330000] hover:text-gray-800 transition-colors">
+          (0923) 086 8342
+        </a>
+      </div>
+
+   
+      <div>
+        <h3 class="font-bold  text-[#330000] mb-4">EMAIL</h3>
+        <a href="mailto:info@penguin.asia" class=" text-[#330000] hover:text-gray-800 transition-colors">
+          info@penguin.asia
+        </a>
+      </div>
+
+      <div>
+        <h3 class="font-bold  text-[#330000] mb-4">FOLLOW US</h3>
+        <div class="flex gap-3">
+          
+          <a href="#" class="bg-[#3b5998] text-white p-2 rounded-sm hover:opacity-90 transition-opacity">
+            <span class="sr-only">Follow us on Facebook</span>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/>
+            </svg>
+          </a>
+       
+          <a href="#" class="bg-[#1DA1F2] text-white p-2 rounded-sm hover:opacity-90 transition-opacity">
+            <span class="sr-only">Follow us on Twitter</span>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+          
+     
+          <a href="#" class="bg-[#BD081C] text-white p-2 rounded-sm hover:opacity-90 transition-opacity">
+            <span class="sr-only">Follow us on Pinterest</span>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center  text-[#330000] text-base">
+      <p>© 2024 All Rights Reserved. </p>
+    </div>
+  </div>
+</footer>
+
+  
+  <script src="index.js"></script>
+  </body>
+
+
+
+</html>
